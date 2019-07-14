@@ -1,0 +1,267 @@
+/*
+===============================================================================
+    Mystic Forest (based on Default theme)  -  version 0.1
+===============================================================================
+*/
+
+/* Defines theme variables */
+:root {
+    --background-color: #141709;
+    --primary-color: #525c2e;
+    --primary-hover-color: #708a00;
+    --logo-url: url("./forest.png");
+    --logo-width: 412px;
+    --logo-height: 175px;
+    --box-width: 21em;
+}
+
+/*
+    Global styling
+*/
+
+.ynh-user-portal {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background: var(--background-color);
+}
+
+.classic-btn { 
+    background: var(--primary-color); 
+}
+.classic-btn:hover { 
+    background: var(--primary-hover-color); 
+}
+
+.messages { 
+    margin: 0; 
+}
+.messages.info { 
+    background: var(--primary-color);
+}
+
+
+/* 
+    Styling specific to portal view 
+*/
+
+.logged .messages {
+    flex: 1 1 100%;
+}
+
+.logged .content {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: start;
+	justify-content: center;
+}
+
+.user {
+	display: flex;
+	flex-flow: column-reverse nowrap;
+	flex: 0 1 auto;
+	background: var(--logo-url) no-repeat;
+	width: var(--logo-width);
+	padding-top: var(--logo-height);
+	margin: 2%;
+	margin-left: 4%;
+}
+
+.user-menu, 
+.user-container {
+	background-color: var(--primary-color);
+	max-width: var(--box-width);
+	margin-left: calc(
+        (var(--logo-width) - var(--box-width)) 
+        / 2
+    );
+}
+
+.apps {
+	flex: 1 1 auto;
+	width: 50%; /* Hack to force footer to wrap on another row */
+	margin: 4%;
+}
+
+.footer { 
+    flex: 1 1 auto; 
+    margin: 4%; 
+}
+
+/* 
+    Styling specific to the login view 
+*/
+
+.content { 
+	width: var(--box-width);
+	padding: 0;
+}
+
+:not(.logged) > .ynh-logo{
+    flex: 0 0 auto;
+    background-image: var(--logo-url);
+    width: var(--logo-width);
+    height: var(--logo-height);
+    opacity: 1;
+    margin-top: 0;
+}
+
+.ynh-wrapper.login { 
+    width: 100%;
+    margin: 0; 
+}
+
+.login-form .form-group { 
+	border: 0.4em solid var(--primary-color);
+	border-top: none;
+	margin: 0; 
+}
+
+.login-form .btn { 
+    margin-top: 0.4em; 
+}
+
+/* 
+   End of custom theme
+   Tiles colors are copied from default theme 
+*/
+
+.bluebg {
+    background: #3498DB!important;
+}
+.bluebg:hover:after,
+.bluebg:focus:after,
+.bluebg:hover:before,
+.bluebg:focus:before {
+    background: #16527A!important;
+}
+
+.purplebg {
+    background: #9B59B6!important;
+}
+.purplebg:hover:after,
+.purplebg:focus:after,
+.purplebg:hover:before,
+.purplebg:focus:before {
+    background: #532C64!important;
+}
+
+.redbg {
+    background: #E74C3C!important;
+}
+.redbg:hover:after,
+.redbg:focus:after,
+.redbg:hover:before,
+.redbg:focus:before {
+    background: #921E12!important;
+}
+
+.orangebg {
+    background: #F39C12!important;
+}
+.orangebg:hover:after,
+.orangebg:focus:after,
+.orangebg:hover:before,
+.orangebg:focus:before {
+    background: #7F5006!important;
+}
+
+.greenbg {
+    background: #2ECC71!important;
+}
+.greenbg:hover:after,
+.greenbg:focus:after,
+.greenbg:hover:before,
+.greenbg:focus:before {
+    background: #176437!important;
+}
+
+.darkbluebg {
+    background: #34495E!important;
+}
+.darkbluebg:hover:after,
+.darkbluebg:focus:after,
+.darkbluebg:hover:before,
+.darkbluebg:focus:before {
+    background: #07090C!important;
+}
+
+.lightbluebg {
+    background: #6A93D4!important;
+}
+.lightbluebg:hover:after,
+.lightbluebg:focus:after,
+.lightbluebg:hover:before,
+.lightbluebg:focus:before {
+    background: #2B5394!important;
+}
+
+.yellowbg {
+    background: #F1C40F!important;
+}
+.yellowbg:hover:after,
+.yellowbg:focus:after,
+.yellowbg:hover:before,
+.yellowbg:focus:before {
+    background: #796307!important;
+}
+
+
+.lightpinkbg {
+    background: #F76F87!important;
+}
+.lightpinkbg:hover:after,
+.lightpinkbg:focus:after,
+.lightpinkbg:hover:before,
+.lightpinkbg:focus:before {
+    background: #DA0C31!important;
+}
+
+/* Following colors are not used yet */
+.pinkbg {
+    background: #D66D92!important;
+}
+.pinkbg:hover:after,
+.pinkbg:focus:after,
+.pinkbg:hover:before,
+.pinkbg:focus:before {
+    background: #992B52!important;
+}
+
+.turquoisebg {
+    background: #1ABC9C!important;
+}
+.turquoisebg:hover:after,
+.turquoisebg:focus:after,
+.turquoisebg:hover:before,
+.turquoisebg:focus:before {
+    background: #0B4C3F!important;
+}
+.lightyellow {
+    background: #FFC973!important;
+}
+.lightyellow:hover:after,
+.lightyellow:focus:after,
+.lightyellow:hover:before,
+.lightyellow:focus:before {
+    background: #F39500!important;
+}
+.lightgreen {
+    background: #B5F36D!important;
+}
+.lightgreen:hover:after,
+.lightgreen:focus:after,
+.lightgreen:hover:before,
+.lightgreen:focus:before {
+    background: #77CF11!important;
+}
+.purpledarkbg {
+    background: #8E44AD!important;
+}
+.purpledarkbg:hover:after,
+.purpledarkbg:focus:after,
+.purpledarkbg:hover:before,
+.purpledarkbg:focus:before {
+    background: #432051!important;
+}
