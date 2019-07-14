@@ -42,4 +42,4 @@ Le conteneur flex de l'image est paramétré pour ne pas rétrécir (flex-shrink
 ## License
 
 CC0 pour le fichier 'mystical_forest/forest.png'  
-GNU Affero Public Licence v3.0 pour le reste des sources.  
+GNU General Public License v3.0 pour le reste des sources.  
